@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MathematicsToolbox"
+        tools:targetApi="31">
+        <activity
+            android:name=".ODE2_solution"
+            android:exported="false" />
+        <activity
+            android:name=".ODE2"
+            android:exported="false" />
+        <activity
+            android:name=".SecondDerivativeSolution"
+            android:exported="false" />
+        <activity
+            android:name=".SecondDerivative"
+            android:exported="false" />
+        <activity
+            android:name=".FIrstDerivativeSolution"
+            android:exported="false" />
+        <activity
+            android:name=".FirstDerivative"
+            android:exported="false" />
+        <activity
+            android:name=".ode1_solution"
+            android:exported="false" />
+        <activity
+            android:name=".ode1"
+            android:exported="false" />
+        <activity
+            android:name=".double_integral_solution"
+            android:exported="false"
+            android:label="@string/title_activity_double_integral_solution"
+            android:theme="@style/Theme.MathematicsToolbox" />
+        <activity
+            android:name=".double_Integral"
+            android:exported="false" />
+        <activity
+            android:name=".Integration_solution"
+            android:exported="false" />
+        <activity
+            android:name=".Definite_Integral"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

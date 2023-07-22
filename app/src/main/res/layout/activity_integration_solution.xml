@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Integration_solution">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2C81C8"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/heading"
+            android:fontFamily="@font/purple_purse"
+            android:paddingTop="8dp"
+            android:paddingBottom="15dp"
+            android:text="Definite Integral Solver"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="136dp" />
+</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/equation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/antic_slab"
+        android:shadowColor="@color/black"
+        tools:text="3xdx"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/ans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/equation" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:fontFamily="@font/purple_purse"
+        android:shadowColor="@color/black"
+        android:text="∫"
+        android:textColor="@color/black"
+        android:textSize="68dp"
+        app:layout_constraintBottom_toBottomOf="@+id/equation"
+        app:layout_constraintEnd_toStartOf="@+id/barrier3"
+        app:layout_constraintTop_toTopOf="@+id/equation" />
+
+    <TextView
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/antic_slab"
+        android:shadowColor="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/equation"
+        app:layout_constraintTop_toTopOf="@+id/textView6"
+        tools:text="upper limit" />
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/antic_slab"
+        android:shadowColor="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/equation"
+        tools:text="lower limit" />
+
+<androidx.constraintlayout.widget.Barrier
+android:id="@+id/barrier3"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+app:barrierDirection="left"
+app:constraint_referenced_ids="b,a" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

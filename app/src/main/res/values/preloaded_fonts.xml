@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alegreya_sc</item>
+        <item>@font/alice</item>
+        <item>@font/alike_angular</item>
+        <item>@font/allan</item>
+        <item>@font/amaranth</item>
+        <item>@font/amiko</item>
+        <item>@font/antic_slab</item>
+        <item>@font/arizonia</item>
+        <item>@font/asul</item>
+        <item>@font/bahiana</item>
+        <item>@font/black_han_sans</item>
+        <item>@font/cairo_extralight</item>
+        <item>@font/changa_extralight</item>
+        <item>@font/charmonman</item>
+        <item>@font/petit_formal_script</item>
+        <item>@font/purple_purse</item>
+        <item>@font/voltaire</item>
+    </array>
+</resources>
